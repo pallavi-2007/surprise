@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixth Page</title>
+    <link rel="stylesheet" href="sixth.css">
+</head>
+<body>
+    <div class="floating-bubbles"></div>
+
+    <h1>Click each heart Nanna🎊</h1>
+    <h2>Find gift by clicking hearts💖</h2>
+
+    <div class="heart-container">
+        <!-- Sparkling Heart (Main) -->
+        <div class="heart sparkle-heart" id="mainHeart">
+            <img src="sparkle.png" class="sparkle" alt="Sparkle">
+        </div>
+
+        <!-- Small hearts -->
+        <div class="heart small-heart" data-audio="audio2.mp3" data-image="image9.jpg"></div>
+        <div class="heart small-heart" data-audio="audio3.mp3.mp3" data-image="image22.jpg"></div>
+        <div class="heart small-heart" data-audio="audio2.mp3" data-image="image30.jpg"></div>
+        <div class="heart small-heart" data-audio="audio2.mp3" data-image="image32.jpg"></div>
+        <div class="heart small-heart" data-audio="audio2.mp3" data-image="image23.jpg"></div>
+        <div class="heart small-heart" data-audio="audio2.mp3" data-image="image10 cherry daddy.jpg"></div>
+    </div>
+
+    <!-- Seal It with a Kiss Button -->
+    <a href="seventh.html" class="seal-button">Seal It with LOVE</a>
+
+    <!-- Video Popup -->
+    <div id="videoPopup" class="popup">
+        <span class="close-btn" onclick="closeVideo()">×</span>
+        <video id="videoElement" controls>
+            <source src="video28.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Image & Audio Popup -->
+    <div id="imagePopup" class="popup">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <img id="popupImage" src="" alt="Special Memory">
+        <audio id="popupAudio" controls autoplay></audio>
+    </div>
+
+    <script src="sixth.js"></script>
+</body>
+</html>

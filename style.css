@@ -1,0 +1,79 @@
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #f7ced3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Main container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ff3d6b;
+}
+
+.message {
+    font-size:24px;
+    font-weight: bold;
+}
+
+.sub-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff3d6b;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff1e4d;
+}
+
+/* Falling hearts animation */
+.hearts-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    color: #ff4a6b;
+    font-size: 18px;
+    animation: fallDown linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes fallDown {
+    0% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) scale(0.8);
+        opacity: 0;
+    }
+}

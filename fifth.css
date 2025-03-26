@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 2.5em;
+    color: #ff4d94;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.photo {
+    width: 150px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+}
+.popup audio {
+    display: block;
+    margin: 10px auto 0 auto; /* Ensure it's below the image */
+}
+.caption {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+.message {
+    margin-top: 40px;
+}
+
+.love {
+    font-size: 1.2em;
+    color: #ff4d94;
+}
+
+.surprise-btn {
+    background: #ff4d94;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.surprise-btn:hover {
+    background: #e60073;
+}
+
+.video-section {
+    margin-top: 30px;
+}
+
+.play-button {
+    background: #ff4d94;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; /* Reduce width */
+    max-width: 500px; /* Set a maximum width */
+}
+
+.video-container video {
+    width: 100%; /* Ensure the video scales within the container */
+    max-height: 300px; /* Reduce height */
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font: size 20px;;
+    color: red;
+}
+
+
